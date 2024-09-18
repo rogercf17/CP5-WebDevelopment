@@ -8,6 +8,10 @@ export default {
     extend: {
       colors: {
         azulPrincipal: '#048BF4',
+        corLetraFooter: '#646363',
+      },
+      fontFamily: {
+        kanit:['Kanit', 'sans-serif'],
       },
     },
   },

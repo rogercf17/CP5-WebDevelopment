@@ -5,8 +5,8 @@ import { LuSun } from "react-icons/lu";
 export default function Header() {
     return(
         <>
-            <nav className="w-100 h-100 text-white flex items-center justify-between p-5">
-                <h1 className="text-azulPrincipal text-5xl">
+            <nav className="w-screen h-36 text-white container mx-auto flex justify-center items-center text-center pr-3 gap-96">
+                <h1 className="text-azulPrincipal text-4xl">
                     <NavLink to="/">RC.F</NavLink>
                 </h1>
                 <ul className="flex gap-20">
