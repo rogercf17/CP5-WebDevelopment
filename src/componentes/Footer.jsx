@@ -4,10 +4,12 @@ import { FaLinkedin } from "react-icons/fa"
 
 export default function Footer() {
     return(
-        <footer className="w-screen h-36 
-        space-y-1
-        text-corLetraFooter 
-        text-center fixed bottom-0 flex flex-col justify-center
+        <footer className="
+            w-screen h-36 
+            space-y-1
+            text-corLetraFooter 
+            text-center fixed bottom-0 flex flex-col justify-center
+            mt-5
         ">
             <hr className="w-3/4 
             self-center

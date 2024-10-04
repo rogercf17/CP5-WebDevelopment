@@ -1,19 +1,33 @@
+import FormularioContato from "../componentes/FormularioContato"
+import { FaRegEnvelope } from "react-icons/fa";
+import { BsGeoAlt } from "react-icons/bs";
+import { FiPhone } from "react-icons/fi";
+
+
 export default function Contato() {
     return(
-        <>
+        <section className="
+            w-10/12 h-fit
+            flex justify-center
+        ">
             {/* <h1>Contato</h1> */}
-            <form className="
-                flex flex-col gap-4 items-center justify-center
-                container mx-auto
-                p-5
-                text-corLetraFooter text-sm
-            ">
-                <input type="text" id="nome" placeholder="Nome Completo" className="w-3/12 p-1 rounded-xl"/>
-                <input type="email" id="email" placeholder="Email" className="w-3/12 p-1 rounded-xl"/>
-                <input type="tel" id="telefone" placeholder="N° de Celular" className="w-3/12 p-1 rounded-xl"/>
-                <textarea id="mensagem" cols={4} rows={4} placeholder="Mensagem" className="w-3/12 p-1 resize-none rounded-xl"></textarea>
-                <button type="button" className="w-24 h-8 bg-azulPrincipal text-white rounded-md">Enviar</button>
-            </form>
-        </>
+            <FormularioContato /> 
+            <div className="flex flex-col gap-5">
+                <h2 className="text-4xl text-azulPrincipal font-bold">Vamos Conversar!</h2>
+                <div>
+                    <ul className="text-white text-sm flex flex-col gap-2">
+                        <li className="flex items-center gap-2"> 
+                            <BsGeoAlt className="text-corLetraFooter"/> São Paulo, SP, Brasil
+                        </li>
+                        <li className="flex items-center gap-2"> 
+                            <FaRegEnvelope className="text-corLetraFooter"/> rogercf16@gmail.com
+                        </li>
+                        <li className="flex items-center gap-2">
+                            <FiPhone className="text-corLetraFooter"/> +55 11998451244
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     )
 }

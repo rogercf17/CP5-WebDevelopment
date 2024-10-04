@@ -11,6 +11,9 @@ export default function Header() {
                 </h1>
                 <ul className="flex gap-20">
                     <li>
+                        <NavLink to="/">Home</NavLink>
+                    </li>
+                    <li>
                         <NavLink to="/projetos">Projetos</NavLink>
                     </li>
                     <li>
