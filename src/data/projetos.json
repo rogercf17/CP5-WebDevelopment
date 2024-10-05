@@ -1,0 +1,26 @@
+[
+    {
+        "titulo": "Calculadora Simples",
+        "capa": "../assets/images/calculadora.png",
+        "descricao": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt quasi ab provident ipsum distinctio dolores laudantium asperiores. Voluptas doloremque, debitis soluta omnis minus, sint nulla, repellat aut alias explicabo eveniet?",
+        "tecnologias": ["HTML", "CSS", "JAVASCRIPT"]
+    },
+    {
+        "titulo": "Calculadora IMC",
+        "capa": "../assets/images/imc.png",
+        "descricao": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt quasi ab provident ipsum distinctio dolores laudantium asperiores. Voluptas doloremque, debitis soluta omnis minus, sint nulla, repellat aut alias explicabo eveniet?",
+        "tecnologias": ["HTML", "CSS", "JAVASCRIPT"] 
+    },
+    {
+        "titulo": "Filmlist",
+        "capa": "../assets/images/calculadora.png",
+        "descricao": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt quasi ab provident ipsum distinctio dolores laudantium asperiores. Voluptas doloremque, debitis soluta omnis minus, sint nulla, repellat aut alias explicabo eveniet?",
+        "tecnologias": ["HTML", "CSS", "JAVASCRIPT"]
+    },
+    {
+        "titulo": "Jogo da Memória",
+        "capa": "../assets/images/memoria.png",
+        "descricao": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt quasi ab provident ipsum distinctio dolores laudantium asperiores. Voluptas doloremque, debitis soluta omnis minus, sint nulla, repellat aut alias explicabo eveniet?",
+        "tecnologias": ["HTML", "CSS", "JAVASCRIPT"]
+    }
+]
