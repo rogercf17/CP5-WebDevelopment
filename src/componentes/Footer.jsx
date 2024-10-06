@@ -19,13 +19,13 @@ export default function Footer() {
                     mb-4
                 "/>
                 <div className="flex gap-4 justify-center mb-4">
-                    <a href="#" className="transition-all duration-500 hover:text-azulPrincipal">
+                    <a href="https://www.instagram.com/rogercf77/profilecard/?igsh=MzZlbzF5bzBjbnR0" className="transition-all duration-500 hover:text-azulPrincipal">
                         <FaInstagram size={21}/>
                     </a>
-                    <a href="#" className="transition-all duration-500 hover:text-azulPrincipal">
+                    <a href="https://github.com/rogercf17" className="transition-all duration-500 hover:text-azulPrincipal">
                         <FaGithub size={21}/>
                     </a>
-                    <a href="#" className="transition-all duration-500 hover:text-azulPrincipal">
+                    <a href="https://www.linkedin.com/in/roger-cardoso-030565212/" className="transition-all duration-500 hover:text-azulPrincipal">
                         <FaLinkedin size={21}/>
                     </a>
                 </div>
