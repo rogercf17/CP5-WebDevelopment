@@ -1,33 +1,37 @@
-import { FaInstagram } from "react-icons/fa"
-import { FaGithub } from "react-icons/fa"
-import { FaLinkedin } from "react-icons/fa"
+import React from 'react';
+import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
-    return(
+    return (
         <footer className="
-            w-screen h-36 
-            space-y-1
+            w-full
+            py-4
             text-corLetraFooter 
-            text-center fixed bottom-0 flex flex-col justify-center
-            mt-5
+            text-center
+            bg-gray-900
+            mt-auto
         ">
-            <hr className="w-3/4 
-            self-center
-            border-corLetraFooter border-t-2
-            "></hr>
-            <div className="flex gap-4 justify-center pt-1">
-                <a href="#" className="transition-all duration-500 hover:text-azulPrincipal">
-                    <FaInstagram size={21}/>
-                </a>
-                <a href="#" className="transition-all duration-500 hover:text-azulPrincipal">
-                    <FaGithub size={21}/>
-                </a>
-                <a href="#" className="transition-all duration-500 hover:text-azulPrincipal">
-                    <FaLinkedin size={21}/>
-                </a>
+            <div className="container mx-auto px-4">
+                <hr className="
+                    w-3/4 
+                    mx-auto
+                    border-corLetraFooter border-t-2
+                    mb-4
+                "/>
+                <div className="flex gap-4 justify-center mb-4">
+                    <a href="#" className="transition-all duration-500 hover:text-azulPrincipal">
+                        <FaInstagram size={21}/>
+                    </a>
+                    <a href="#" className="transition-all duration-500 hover:text-azulPrincipal">
+                        <FaGithub size={21}/>
+                    </a>
+                    <a href="#" className="transition-all duration-500 hover:text-azulPrincipal">
+                        <FaLinkedin size={21}/>
+                    </a>
+                </div>
+                <h2 className="text-lg sm:text-xl md:text-2xl mb-2">Me siga nas redes sociais</h2>
+                <h4 className="text-xs">©2024 React & Tailwind CSS Portfolio. Roger Cardoso Ferreira</h4>
             </div>
-            <h2 className="text-2xl pb-4">Me siga nas redes sociais</h2>
-            <h4 className="text-xs">©2024 React & Tailwind CSS Portfolio. Roger Cardoso Ferreira</h4>
         </footer>
-    )
+    );
 }

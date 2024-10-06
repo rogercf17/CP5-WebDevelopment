@@ -1,16 +1,18 @@
-import Roger from "../assets/images/Minha-foto.png"
+import Roger from "/minha-Foto.png"
 import CardSkills from "../componentes/CardSkills";
 
 export default function Sobre() {
   return (
     <section className="
-        w-11/12 h-fit
+        w-full h-fit
         flex flex-col justify-center items-center gap-8
         mb-10
+        mx-auto
+        md:w-11/12
     ">
-        <div className="flex justify-center justify-evenly items-center">
-          <img src={Roger} alt="Minha Foto" className="w-80 h-80 rounded-full" />
-          <p className=" text-white text-md text-justify w-1/4 font-normal tracking-wider first-letter:text-3xl">
+        <div className="flex flex-col items-center md:flex-row md:justify-evenly md:items-center">
+          <img src={Roger} alt="Minha Foto" className="w-40 h-40 rounded-full md:w-80 md:h-80" />
+          <p className="text-white text-justify text-base w-full px-5 mt-4 md:w-1/4 md:text-md md:text-white md:font-normal md:tracking-wider md:first-letter:text-3xl">
               Olá meu nome é Roger Cardoso Ferreira, tenho 19 anos e sou Engenheiro de Software. 
               Atualmente morando no bairro Jardim Grimaldi em São Paulo. Conclui meu ensino médio 
               integrado com o técnico em Análise de Desenvolvimentos de Sistemas na Etec Professor

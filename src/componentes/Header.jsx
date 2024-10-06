@@ -1,32 +1,40 @@
+import React, { useState } from 'react';
 import { NavLink } from "react-router-dom";
-import { LuSun } from "react-icons/lu";
-
 
 export default function Header() {
-    return(
-        <>
-            <nav className="w-screen h-36 text-white container mx-auto flex justify-center items-center text-center pr-3 gap-96">
-                <h1 className="text-azulPrincipal text-4xl">
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    return (
+        <nav className="w-full bg-gray-800 text-white p-4">
+            <div className="container mx-auto flex flex-wrap items-center justify-between">
+                <h1 className="text-azulPrincipal text-2xl md:text-3xl lg:text-4xl">
                     <NavLink to="/">RC.F</NavLink>
                 </h1>
-                <ul className="flex gap-20">
-                    <li>
-                        <NavLink to="/">Home</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/projetos">Projetos</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/sobre">Sobre</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/contato">Contato</NavLink>
-                    </li>
+                
+                {/* Hamburger menu for mobile */}
+                <button 
+                    className="lg:hidden"
+                    onClick={() => setIsMenuOpen(!isMenuOpen)}
+                >
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+
+                {/* Navigation links */}
+                <ul className={`${isMenuOpen ? 'block' : 'hidden'} w-full lg:flex lg:w-auto lg:space-x-8 mt-4 lg:mt-0`}>
+                    {['Home', 'Projetos', 'Sobre', 'Contato'].map((item) => (
+                        <li key={item} className="mb-2 lg:mb-0">
+                            <NavLink 
+                                to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
+                                className="block hover:text-azulPrincipal transition-colors"
+                            >
+                                {item}
+                            </NavLink>
+                        </li>
+                    ))}
                 </ul>
-                <div className="w-10 h-10 bg-azulPrincipal rounded-lg flex items-center justify-center">
-                    <LuSun size={25}/>
-                </div>
-            </nav>
-        </>
-    )
+            </div>
+        </nav>
+    );
 }

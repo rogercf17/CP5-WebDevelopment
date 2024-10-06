@@ -3,19 +3,18 @@ import { FaRegEnvelope } from "react-icons/fa";
 import { BsGeoAlt } from "react-icons/bs";
 import { FiPhone } from "react-icons/fi";
 
-
 export default function Contato() {
     return(
         <section className="
-            w-10/12 h-fit
-            flex justify-center
+            w-full h-fit
+            flex flex-col items-center
+            md:w-10/12 md:flex-row md:justify-center
         ">
-            {/* <h1>Contato</h1> */}
             <FormularioContato /> 
-            <div className="flex flex-col gap-5">
-                <h2 className="text-4xl text-azulPrincipal font-bold">Vamos Conversar!</h2>
+            <div className="flex flex-col items-center gap-5 mt-5 md:mt-0 md:ml-5">
+                <h2 className="text-2xl text-azulPrincipal font-bold md:text-4xl">Vamos Conversar!</h2>
                 <div>
-                    <ul className="text-white text-sm flex flex-col gap-2">
+                    <ul className="text-white text-base flex flex-col gap-2 md:text-sm md:text-white">
                         <li className="flex items-center gap-2"> 
                             <BsGeoAlt className="text-corLetraFooter"/> São Paulo, SP, Brasil
                         </li>
