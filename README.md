@@ -1,8 +1,35 @@
-# React + Vite
+# CP5-WebDevelopment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Visão geral
+Este repositório contém o projeto final do CP5 de WebDevelopment.
 
-Currently, two official plugins are available:
+## Descrição
+O projeto tem como objetivo criar uma aplicação web responsiva e visualmente atrativa que inclua um formulário de contato, seção de perfil pessoal e apresentação de habilidades. A aplicação é projetada com uma abordagem mobile-first para garantir que tenha uma ótima aparência e funcionalidade em todos os dispositivos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologias utilizadas
+- HTML5: Para estruturar o conteúdo.
+- CSS3 (TailwindCSS): Para estilizar a aplicação.
+- JavaScript (React): Para construir a interface do usuário.
+- React Router Dom: Para implementação de rotas dinÂmicas no site.
+- UseState, UseEffect e UseParams: para criar lógicas em javascript para realizar efeitos no site.
+- React Icons: Para usar ícones vetoriais como componentes React.
+
+## Instalação
+1. Clonar o repositório
+```sh
+    git clone https://github.com/rogercf17/CP5-WebDevelopment.git
+```
+2. Navagear até o diretório do projeto
+```sh
+  cd CP5-WebDevelopment
+```
+3. Instalar as dependências
+```sh
+  npm install
+```
+
+## Uso
+Execute o servidor de desenvolvimento
+```sh
+  npm run dev
+```
